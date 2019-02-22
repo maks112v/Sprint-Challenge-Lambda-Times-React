@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { carouselData } from '../../data'
+import styled from 'styled-components'
 // Complete this Carousel 
+const CarouselImage = styled.img`
+  display: block !important;
+`;
+
 export default class Carousel extends Component {
   constructor(props){
     super(props);
@@ -48,7 +53,7 @@ export default class Carousel extends Component {
   // }
 
   selectedImage = () => {
-    return <img src={this.state.images[this.state.current]} style={{display: 'block'}} />
+    return <CarouselImage src={this.state.images[this.state.current]} />
   }
   
   render(){

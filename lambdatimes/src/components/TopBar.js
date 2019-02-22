@@ -24,7 +24,8 @@ const TopBarDiv = styled.div`
   flex-direction: row;
   position: fixed;
   height: 44px;
-  background-color: #333; =
+  background-color: #333;
+  z-index: 100;
 `;
 
 const ContainerLeft = styled.div`

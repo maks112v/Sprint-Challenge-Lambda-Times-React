@@ -8,7 +8,7 @@ const Card = props => {
       <div className="headline">{props.card.headline}</div>
       <div className="author">
         <div className="img-container">
-          <img src={props.card.img} />
+          <img src={props.card.img} alt={props.card.author} />
         </div>
         <span>By {props.card.author}</span>
       </div>
@@ -19,7 +19,7 @@ const Card = props => {
 // Make sure to include PropTypes.
 Card.propTypes = {
   card: PropTypes.shape({
-    author: PropTypes.string,
+    headline: PropTypes.string,
     img: PropTypes.string,
     author: PropTypes.string,
   })
