@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Content from './components/Content/Content';
 
 const App = () => {
-  console.log(stringHash('test'));
   return (
     <div className="App">
       <TopBar />
